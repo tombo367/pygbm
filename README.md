@@ -21,10 +21,10 @@ Here's a quick example of how to use this package:
   T = 1.0
   N = 100
 
-  simulator = pygbm.GBM(y0, mu, sigma)  # Ensure pygbm is correctly referenced
+  simulator = pygbm.GBM(y0, mu, sigma) 
   t, y = simulator.get_solution(T, N)
   
-  plt.plot(t, y, label="GBM Path")  # Use the correct variable names
+  plt.plot(t, y, label="GBM Path")  
   plt.xlabel("Time")
   plt.ylabel("Y")
   plt.title("Simulated Geometric Brownian Motion Path")
