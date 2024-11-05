@@ -1,47 +1,50 @@
 pygbm
 ==============================================================================
 
-  *Author* Tom Borrett
+*Author*: Tom Borrett
 
 The **pygbm** package is a Python package designed to simulate geometric Brownian motion.
 
 Features 
 ------------
 
-- **GBM**: core attribute and implements the analytic solution
-- **EMGBM**: implements the Euler-Maruyama method
-- **MGBM**: implements the Milstein method
+- **GBM**: Core attribute that implements the analytic solution.
+- **EMGBM**: Implements the Euler-Maruyama method.
+- **MGBM**: Implements the Milstein method.
 
 Installation
 ------------
-Ensure you have Python 3.6 or higher. Install the package and its dependencies with:
-.. code-block:: bash
-  pip install -e .
 
+Ensure you have Python 3.6 or higher. Install the package and its dependencies with:
+
+.. code-block:: bash
+   pip install -e .
 
 Usage
 ------------
+
 Here's a quick example of how to use the package:
+
 .. code-block:: python
-  import pygbm
-  import matplotlib.pyplot as plt
-  
-  y0 = 1.0
-  mu = 0.05
-  sigma = 0.2 
-  T = 1.0
-  N = 100
+   import pygbm
+   import matplotlib.pyplot as plt
 
-  simulator =  GBM(y0, mu, sigma)
-  
-  t, y = simulator.get_solution(T, N)
+   y0 = 1.0
+   mu = 0.05
+   sigma = 0.2 
+   T = 1.0
+   N = 100
 
-  plt.plot(t_values, y_values, label="GBM Path")
-  plt.xlabel("Time")
-  plt.ylabel("Y")
-  plt.title("Simulated Geometric Brownian Motion Path")
-  plt.legend()
-  plt.show()
+   simulator = pygbm.GBM(y0, mu, sigma)  # Ensure pygbm is correctly referenced
+
+   t, y = simulator.get_solution(T, N)
+
+   plt.plot(t, y, label="GBM Path")  # Use the correct variable names
+   plt.xlabel("Time")
+   plt.ylabel("Y")
+   plt.title("Simulated Geometric Brownian Motion Path")
+   plt.legend()
+   plt.show()
 
 Contributing
 ------------
@@ -52,6 +55,7 @@ License
 -------
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
+
 
 
 
