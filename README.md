@@ -8,9 +8,39 @@ The **pygbm** package is a Python package to simulate geometric Brownian motion.
 - **EMGBM**: implements the Euler-Maruyama method
 - **MGBM**: implements the Milstein method
 
-## Run a simulation in CLI
-To run a simulation in CLI, use the following:
+## Usage
+
+Here's a quick example of how to use this package:
+```python
+  import pygbm
+  import matplotlib.pyplot as plt
+
+  y0 = 1.0
+  mu = 0.05
+  sigma = 0.2 
+  T = 1.0
+  N = 100
+
+  simulator = pygbm.GBM(y0, mu, sigma)  # Ensure pygbm is correctly referenced
+  t, y = simulator.get_solution(T, N)
+  
+  plt.plot(t, y, label="GBM Path")  # Use the correct variable names
+  plt.xlabel("Time")
+  plt.ylabel("Y")
+  plt.title("Simulated Geometric Brownian Motion Path")
+  plt.legend()
+  plt.show()
+```
+
+To run a simulation directly in CLI, use the following:
 ```bash
 pygbm euler --y0 1.0 --mu 0.05 --sigma 0.2 --method milstein --T 1.0 --N 100 --output gbm_plot.png
 ```
-`--y0`, `--mu`, and `--sigma` arguments are required, while defaults are, Milstein method for `--method`, 10 for `--T`, 100 for `--N`, and gbm_plot.png for `--output`.
+
+## Documentation
+
+Visit our [documentation page](https://tb711-pygbm.readthedocs.io/en/latest/)
+
+## License
+
+This project is licensed under the MIT License - see the ``LICENSE`` file for details.
