@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.abspath('..'))  # Adjust the path as necessary
 project = 'GBM Simulator'  # Name of your project
 author = 'Tom Borrett'  # Your name or the name of the author(s)
 release = 'beta'
+copyright = '2024, Tom Borrett'
 year = datetime.now().year  # Current year for copyright
 
 

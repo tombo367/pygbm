@@ -1,0 +1,6 @@
+numpy>=1.19.0,<1.21.0
+sphinx>=3.5
+sphinx_rtd_theme>=1.0
+nbsphinx>=0.8
+myst_parser
+sphinx_gallery
