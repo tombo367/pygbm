@@ -15,14 +15,14 @@ Features
 Installation
 ------------
 Ensure you have Python 3.6 or higher. Install the package and its dependencies with:
-.. code-block::bash
+.. code-block:: bash
   pip install -e .
 
 
 Usage
 ------------
 Here's a quick example of how to use the package:
-.. code-block::python
+.. code-block:: python
   import pygbm
   import matplotlib.pyplot as plt
   
