@@ -32,7 +32,7 @@ Here's a quick example of how to use this package:
   plt.show()
 ```
 
-To run a simulation directly in CLI, use the following:
+To run a simulation directly in CLI, see the following example:
 ```bash
 pygbm euler --y0 1.0 --mu 0.05 --sigma 0.2 --method milstein --T 1.0 --N 100 --output gbm_plot.png
 ```
