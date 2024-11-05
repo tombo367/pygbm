@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools", "wheel", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -16,5 +16,20 @@ dependencies = [
     "matplotlib"
 ]
 
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Physicists",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source" = https://github.com/tombo367/pygbm
+
 [project.scripts]
 pygbm = "gbm_simulator.cli:main"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+write_to = "pygbm/version.py"

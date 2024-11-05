@@ -1,7 +1,7 @@
 import argparse
 import matplotlib.pyplot as plt
 import numpy as np
-from gbm_simulator import GBM, EMGBM, MGBM
+from pygbm import GBM, EMGBM, MGBM
 
 def get_solution(y0, mu, sigma, T=10, N=100):
     """Run the GBM simulation and return the results."""

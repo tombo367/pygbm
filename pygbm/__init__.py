@@ -1,4 +1,4 @@
-from .base_class import GBM
+from .base_pygbm import GBM
 
 from .euler_mar_method.euler_mar_method import EMGBM
 
