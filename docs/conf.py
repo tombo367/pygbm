@@ -16,7 +16,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
     'sphinx_rtd_theme',
-    'sphinx_gallery.load_style',
 ]
 
 # NBSphinx settings

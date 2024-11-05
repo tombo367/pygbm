@@ -9,6 +9,8 @@ class MGBM:
         self.sigma = sigma
 
     def get_solution(self, time=10, N=100):
+        
+        np.random.seed(42)
 
         t = np.linspace(0, time, N)
         dt = t[1] - t[0]
