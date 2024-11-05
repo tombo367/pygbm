@@ -27,7 +27,7 @@ classifiers = [
 Source = "https://github.com/tombo367/pygbm"
 
 [project.scripts]
-pygbm = "gbm_simulator.cli:main"
+pygbm = "pygbm.cli:main"
 
 [tool.setuptools_scm]
 version_scheme = "post-release"
