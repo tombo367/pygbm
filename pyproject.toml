@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 [project.urls]
-"Source" = https://github.com/tombo367/pygbm
+Source = "https://github.com/tombo367/pygbm"
 
 [project.scripts]
 pygbm = "gbm_simulator.cli:main"
