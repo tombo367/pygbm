@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/tb711-pygbm/badge/?version=latest)](https://ljf441-pygbm.readthedocs.io/en/latest/)
+
 # pygbm
 The **pygbm** package is a Python package to simulate geometric Brownian motion.
 

@@ -15,34 +15,33 @@ Features
 Installation
 ------------
 Ensure you have Python 3.6 or higher. Install the package and its dependencies with:
-```bash
-pip install -e .
-```
+.. code-block::bash
+  pip install -e .
+
 
 Usage
 ------------
 Here's a quick example of how to use the package:
-```python
-import pygbm
-import matplotlib.pyplot as plt
+.. code-block::python
+  import pygbm
+  import matplotlib.pyplot as plt
   
-y0 = 1.0
-mu = 0.05
-sigma = 0.2 
-T = 1.0
-N = 100
+  y0 = 1.0
+  mu = 0.05
+  sigma = 0.2 
+  T = 1.0
+  N = 100
 
-simulator =  GBM(y0, mu, sigma)
+  simulator =  GBM(y0, mu, sigma)
   
-t, y = simulator.get_solution(T, N)
+  t, y = simulator.get_solution(T, N)
 
-plt.plot(t_values, y_values, label="GBM Path")
-plt.xlabel("Time")
-plt.ylabel("Y")
-plt.title("Simulated Geometric Brownian Motion Path")
-plt.legend()
-plt.show()
-```
+  plt.plot(t_values, y_values, label="GBM Path")
+  plt.xlabel("Time")
+  plt.ylabel("Y")
+  plt.title("Simulated Geometric Brownian Motion Path")
+  plt.legend()
+  plt.show()
 
 Contributing
 ------------
