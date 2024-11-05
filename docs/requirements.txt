@@ -5,3 +5,6 @@ sphinx
 sphinx_rtd_theme
 nbsphinx
 myst-parser
+ipykernel
+jupyter_client
+jupyter_core
